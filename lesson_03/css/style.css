@@ -1,0 +1,41 @@
+
+/* Скидання стилів */
+@import url('reset.css');
+
+/* Селектор атрибутів */
+/* шукає сполучення літер 'te' в атрибутах class */
+/* [class*="te"]{
+    color: red;
+} */
+
+/* КОМБІНАЦЯ СЕЛЕСТОРІВ */
+div.text{
+    color: blueviolet;
+}
+
+
+.articl h1{
+    color: green;
+}
+
+/* спеціальні символи | parent - child */
+.lesson > p{
+    color: red; 
+}
+
+/* те шо поруч | sibling-following */
+.lesson ~ p{
+    color: red;
+}
+
+/* безпосередньо після  */
+.lesson + p{
+    color: red;
+}
+
+/* ПРИОРІТЕТ селекторів */
+
+/* лише вкладений текст '*' */
+.text *{
+    color: red;
+}
