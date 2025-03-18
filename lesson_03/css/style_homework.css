@@ -1,0 +1,40 @@
+@import url('reset.css');
+
+*{
+    color: darkgray;
+}
+
+h2{
+    color: rgb(10, 201, 93);
+}
+
+.title{
+    color: rgb(8, 85, 109);
+}
+
+#history-title{
+    color: royalblue;
+}
+
+[class*="ukr"]{
+    color: saddlebrown;
+}
+
+p.ukraine-history-part-two{
+    color: darkslategray;
+}
+
+div .ukraine-history-independence{
+    color: darkred;
+}
+
+.modern-ukraine > p{
+    color: rgb(18, 114, 223);
+}
+
+.conclusion ~ p{
+    color: slateblue;
+}
+.language-and-literature + p{
+    color: rgb(83, 83, 83);
+}
