@@ -1,0 +1,39 @@
+
+/* Скидання стилів */
+@import url('reset.css');
+
+@import url('fonts.css');
+
+
+body{
+    font-family: "KoPubBatang", sans-serif;
+    font-size: 17px;
+    
+}
+
+.title{
+    font-size: 70px;
+    /* font-style: italic; */
+    font-weight: 400;
+    color: rgb(245, 10, 10, 0.3);
+
+    /* вирівнювання тексту */
+    text-align: center;  /* justify - вирівнюваня по ширені*/
+
+    text-decoration: underline;
+    text-decoration-style: line-through;
+    line-height: 1.37;
+    letter-spacing: 5px;
+}
+
+p{
+    text-shadow: 5px 5px 2px lightgray;
+    line-height: 1 ; /*визначає висоту рядка*/
+    word-spacing: 8px;
+    white-space: wrap;
+}
+
+.text{
+    text-transform:capitalize;
+    
+}

@@ -1,0 +1,103 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('fonts.css');
+
+header p{
+    font-size: 42px;
+    text-align: center;
+    color: #8B0000;
+}
+.main-container{
+    line-height: 1.35;
+}
+
+.title>h1{
+    font-size: 42px;
+    text-align: center;
+    line-height:1.37;
+    font-weight: bold;
+    font-family: 'Source Code Pro',cursive;
+    letter-spacing: 3px;
+}
+
+.title>h1>span{
+    font-family: VictoriaOne, fantasy;
+    font-weight: 400;
+    color: #964B00;
+}
+
+.main-container h2,
+.main-container h3{
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-style:solid ;
+    text-decoration-color: #a9a9a9;
+
+}
+
+.main-container div p{
+    font-family: 'Playwrite AU VIC',cursive;
+    font-size: small;
+    
+}
+
+div > ul > li > span{
+    text-transform: capitalize;
+    font-family:'Playwrite AU VIC',cursive;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+div > ul > li{
+    font-family:'Playwrite AU VIC',cursive;
+    font-size: small;
+
+}
+
+.part-one-end{
+    line-height: 3;
+    text-align: center;
+    font-size: large;
+    color: #8B0000;
+}
+
+/* Ecobazar style */
+
+.ecobazar{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ecobazar h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    
+}
+
+.ecobazar p{
+    font-size: 18px;
+    color: #808080;
+    
+}
+
+.ecobazar h4{
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Creates a thick underline */
+    text-decoration-color: transparent; /* Makes underline invisible */
+}
+
+footer p{
+    font-size: 24px;
+    color: #8B0000;
+    text-align: center;
+}
