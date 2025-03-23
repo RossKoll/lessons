@@ -89,7 +89,7 @@ div > ul > li{
     
 }
 
-.ecobazar h4{
+.ecobazar span{
     color: transparent;
     text-decoration: underline;
     text-decoration-thickness: 1px; /* Creates a thick underline */
