@@ -1,0 +1,52 @@
+@import url('reset.css');
+
+main{
+    background-color: aquamarine;
+    font-size: 0;
+}
+p{
+    font-size: 15px;
+}
+.title{
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+    
+}
+
+.title > h1{
+    font-family: sans-serif;
+    font-size: 24px;
+    height: 50px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.main-container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.card-container {
+    background-color: bisque;
+    padding-top: 15px;
+    
+}
+
+.card > h1{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card{
+    display: inline-block;
+    width: 33.33%;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-bottom: 3%;
+}
