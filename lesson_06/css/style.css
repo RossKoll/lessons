@@ -1,0 +1,65 @@
+
+/* Скидання стилів */
+@import url('reset.css');
+
+@import url('fonts.css');
+
+
+/* Оформлення блоків */
+
+/* 1. border -  */
+/*  border-color
+    border-width
+    border-style */
+
+       /* wrap text  - Alt  + w */
+
+/* 
+    2. outline - відстань від обєкта до обводки
+accesebility 
+:focus  - при наведенні на обєкт 
+приклад з лінкою та tab (by default in browser)
+*/
+
+/* 
+    3. border-radius - закруглення кутів
+*/
+
+/* 
+    4. box-shadow 
+*/
+
+/* 
+    5. opacity - рівень прозорості блоку
+    можна взаємодіяти навіть коли не видимий
+*/
+
+/* 
+    6. visibility - курує відображенням елементу
+    не можна взаємодіяти з обєктом коли hidden
+
+    display : none - повністю ховає обєкт, місце пропадає
+
+*/
+
+/* =================== II ============== */
+/* 
+  7. background 
+
+       background-color
+       background-image / не встановлює ромір елементу | можна доддати  liner-gradient
+       background-repeat : repeat | by default 
+       background-position : 20% 10% | 20 - depends on width 10 depends on higth
+       background-attachment : fixed | scroll
+       backgraound-size : cover | contain
+                (backgraound-size: cover and background-position : center)
+*/
+
+
+/* ================ III ============== */
+/* 
+    Стрілки 
+
+    
+
+*/
