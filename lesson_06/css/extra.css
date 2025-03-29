@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+    overflow:hidden;
+    /* background-color: gray; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-container{
+    background-image: url("../img/istock-2--992054732-1024x1024.jpg");
+    background-size:cover;
+    background-clip: text;
+    color: transparent;
+}
+
+
+h1{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.item{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.block-with-border{
+    min-width: 250px;
+    min-height: 350px;
+    background-color: bisque;
+    margin:35px ;
+    border: 15px solid green;
+    border-style: dotted;
+    outline: 15px solid green;
+    outline-style: dotted;
+    outline-offset: 5px;
+    text-align: center;
+    color: black;
+    
+}
+/* .block {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+.page:hover .block {
+	opacity: 1;
+	visibility: visible;
+} */
+
+/* border */
+.block-with-border:hover{
+    outline: 20px dotted red;
+    animation: step-start 0.5s;
+    border: 18px dotted darkgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* border-radius */
+.block-with-radius{
+    min-width: 250px;
+    min-height: 350px;
+    background-color: rgb(255, 228, 196);
+    margin:35px ;
+    border-radius: 0 25% 0 0;
+    text-align: center;
+    color: black;
+
+    > img{
+        border-radius: 3%;
+        box-shadow: 0 0 15px 5px gray;
+    }
+}
+
+.block-with-background-image{
+    min-width: 250px;
+    min-height: 350px;
+    background-image: url("../img/check1.svg");
+    background-color: antiquewhite;
+    background-position:25%;
+    background-attachment: scroll;
+    /* background-size: contain; */
+    margin:35px ;
+    background-repeat: no-repeat;
+}
+
+
+
+.check-icon{
+    display: inline-block;
+    background-color: #00B207;
+    min-width: 20px;
+    min-height: 20px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-image: url("../img/check1.svg");
+    background-repeat: no-repeat;
+    background-position:50%;
+
+}
+.check-block{
+ font-size: 0; 
+}
+
+.check-block > p{
+    display: inline-block;
+    vertical-align:middle;
+    line-height: 20px;
+    font-size: 18px;
+    padding-left: 8px;
+    
+}

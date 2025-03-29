@@ -1,14 +1,19 @@
 @import url('reset.css');
 @import url('fonts.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-main{
-    background-color: #231F8B ;
-
-}
 
 .main-container{
     padding-bottom: 50px;
+    background-color: #231F8B; 
+
+    .section{
+        max-width: 1050px;
+        margin: 0 auto;
+        padding-top: 40px;
+        overflow: hidden;
+        
+    }
 }
 .title > h1, h3{
     color: #fff;
@@ -47,22 +52,18 @@ main{
 .title{
     margin: 0 auto 70px auto;
     max-width: 1050px;
+    padding-left: 23px;
+    
 }
 
-.main-container{
-    background-color: #231F8B; 
-    
-     
-    
-}
 
 .cards-block{
-    padding: 0px 5px;
+    
     font-size: 0;
     vertical-align: top;
-    max-width: 1050px;
-    margin: 0 auto;
     margin-bottom: 50px;
+    text-align: center;
+    
 }
 
 .card-one,
@@ -74,6 +75,10 @@ main{
     background-color: white;
     margin-right: 30px;
     vertical-align: top;
+}
+
+.cards-block > div:last-child {
+    margin-right: 0;
 }
 
 .icon{
