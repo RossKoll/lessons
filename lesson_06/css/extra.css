@@ -119,3 +119,24 @@ h1{
     padding-left: 8px;
     
 }
+
+.block-with-image{
+    position: relative;
+    border-radius: 45.81% 17.95%;
+    background-image: url("../img/pexels-shvets-production-7562014-2.png");
+    height: 557px;
+    width: 527px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* .block-with-image > .inside{
+    position: absolute;
+    height: 557px;
+    width: 527px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.63);
+    border-radius: 45.81% 17.95%;
+    
+} */
+
