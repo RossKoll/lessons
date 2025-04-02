@@ -4,10 +4,15 @@ body {
 	font-family: "Gilroy", sans-serif;
 	background-color: #333;
 	color: #fff;
+    
 }
 .wrapper {
 	/* overflow: clip; */
 	min-height: 100%;
+}
+
+footer{
+    min-height: 150px;
 }
 
 
@@ -62,27 +67,6 @@ a:active{
     color: green;
 }
 
-
-
-/* .text-block > div div { 
-    color: white; /* ✅ Prevents inner divs from inheriting green 
-} 
-*/
-
-
-/*
-.text-block ~ div{
-    color: red;
-}
-
-.text-block + div{
-    color: violet;
-}
-
-.first-child ~ div{
-    color: aqua;
-} */
-
 .block-visited{
     font-size: 0;
 }
@@ -112,4 +96,143 @@ a:visited{ /* does not work with target='_blank'*/
 
 .block-visited a:first-child{
     padding-left: 15px;
+}
+
+.game-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    height: 850px;
+    font-size: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/pexels-tomfisk-7086836.jpg);
+    background-size: cover;
+    
+}
+
+.start-game{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 160px;
+    text-align: center;
+    background-image: url("../img/pexels-pixmike-413195.jpg");
+    background-size: cover;
+    letter-spacing: 4px;
+
+}
+
+.one{
+ width: 35px;
+ height: 150px;
+ margin-left: 510px;
+}
+
+.two{
+    width: 250px;
+    height: 30px;
+    margin-left: 295px;
+}
+
+.three{
+    width: 25px;
+    height: 230px;
+    margin-left: 295px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.four{
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+.five{
+    width: 20px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+.six{
+    width: 250px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 105px;
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+.seven{
+    width: 13px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+.nine{
+    width: 8px;
+    height: 150px;
+    margin-left: 643px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.eigth{
+    width: 200px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 643px;
+    font-size: 12px;
+}
+
+.ten{
+    width: 100px;
+    height: 10px;
+    margin-left: 550px;
+}
+
+.eleven{
+    width: 7px;
+    height: 3px;
+    margin-left: 550px;
+    font-size: 12px;
+}
+
+.end-game{
+    color: palevioletred;
+    font-size: 22px;
+    width: 60px;
+    /* padding: 10px 20px 10px 20px; */
+    text-align: center;
+    margin-left: 500px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    vertical-align: top;
+
+}
+
+.item:not(:first-child) {
+	/* visibility: hidden; */
+}
+.item:hover + .item,.item:hover{
+    background-color: green;
+    background-image: url("../img/pexels-pixmike-413195.jpg");
+    background-size: cover;
+    visibility: visible;
+     box-shadow: 
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;;
 }
