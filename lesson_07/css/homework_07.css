@@ -1,0 +1,298 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
+
+body {
+    font-size: 0;
+	font-family: "Inter",sans-serif;
+    line-height: normal;
+    color: #000;
+	/* background-color: #4e4e4e; */
+ 
+}
+
+header{
+    background-color: #e5e5e5;
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    > span{
+        font-weight: 700;
+    }
+}
+
+.professional-faculty {
+    background-color: #412672;
+}
+
+.container{
+    min-height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 15px;
+    color: #fff;
+    
+    > p{
+        margin-bottom: 31px;
+        font-size: 38px;
+
+        > span{
+            font-weight: 700;
+        }
+    }
+}
+
+.person-cards-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #000; 
+    font-size: 0;
+    padding-bottom: 102px;
+}
+
+.person-cards-container .person-card:not(:last-child){
+    margin-right: 20px;
+}
+
+.person-card{
+    display: inline-block;
+    width: 32%;
+    color: black;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 15px;
+
+    > h3{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    > h4{
+        color: #4F4F4F;
+        min-height: 80px;
+    }
+
+    > a {
+        color: #FE3F3F;
+    }
+}
+
+.person-card *:not(:last-child){
+    margin-bottom: 16px;
+}
+
+/* .person-card *:last-child{
+    margin-bottom: 20px;
+} */
+
+.person-card:hover{
+    background-color: #FFBE48 ;
+}
+
+.person-card > a:hover{
+    text-decoration: underline;
+}
+
+.text-container{
+    color: #412672;
+    font-size: 34px;
+    width: 45%;
+    font-style: normal;
+    line-height: normal;
+    padding-bottom: 50px;
+
+    p:first-child{
+        margin-bottom: 20px;
+    }
+
+    p > span{
+        font-weight: 700;
+    }
+
+    p:last-child{
+        font-size: 22px;
+    }
+}
+
+.text-container > p:last-of-type{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+li{
+    font-size: 20px;
+    line-height: 51px;
+    color: #4F4F4F;
+    vertical-align: middle;
+}
+
+li::before{
+    content: "";
+    background-image: url('../img/check-icon.svg') ;
+    background-position: center ;
+    width: 22px;
+    height: 22px;
+	display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+footer{
+    background-color: #412672;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer-container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.game-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    height: 800px;
+    font-size: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/pexels-tomfisk-7086836.jpg);
+    background-size: cover;
+
+}
+
+.inner-game-container{
+    width: 1050px;
+}
+
+.start-game{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 160px;
+    text-align: center;
+    background-image: url("../img/pexels-pixmike-413195.jpg");
+    background-size: cover;
+    letter-spacing: 4px;
+
+}
+
+.one{
+ width: 35px;
+ height: 150px;
+ margin-left: 510px;
+}
+
+.two{
+    width: 250px;
+    height: 30px;
+    margin-left: 295px;
+}
+
+.three{
+    width: 25px;
+    height: 230px;
+    margin-left: 295px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.four{
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+.five{
+    width: 20px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+.six{
+    width: 250px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 105px;
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+.seven{
+    width: 13px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+.nine{
+    width: 8px;
+    height: 150px;
+    margin-left: 643px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.eigth{
+    width: 200px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 643px;
+    font-size: 12px;
+}
+
+.ten{
+    width: 100px;
+    height: 10px;
+    margin-left: 550px;
+}
+
+.eleven{
+    width: 7px;
+    height: 45px;
+    margin-left: 550px;
+    font-size: 12px;
+}
+
+.end-game{
+    color: #fff;
+    font-size: 22px;
+    width: 160px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    margin-left: 500px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.item:not(:first-child) {
+	visibility: hidden;
+}
+.item:hover + .item,.item:hover{
+    background-color: green;
+    background-image: url("../img/pexels-pixmike-413195.jpg");
+    background-size: cover;
+    visibility: visible;
+     box-shadow: 
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;;
+}
