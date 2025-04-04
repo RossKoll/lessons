@@ -55,6 +55,7 @@ header{
     max-width: 1080px;
     color: #000; 
     font-size: 0;
+    overflow:hidden;
     
 }
 
@@ -62,6 +63,11 @@ header{
     margin-right: 20px;
     margin-bottom: 20px;
 } */
+
+.inner-container {
+    margin: 0 -30px -30px 0;
+
+}
 
 .person-card{
     display: inline-block;
@@ -93,6 +99,10 @@ header{
     > a {
         color: #FE3F3F;
     }
+}
+
+.person-card > *:not(:last-child){
+    margin-bottom: 16px;
 }
 
 /* .person-card *:not(:first-child){
