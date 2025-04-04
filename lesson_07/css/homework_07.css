@@ -28,13 +28,16 @@ header{
 
 .professional-faculty {
     background-color: #412672;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
 
 .container{
     min-height: 100%;
     max-width: 1080px;
     margin: 0 auto;
-    padding-top: 50px;
+    
     font-size: 15px;
     color: #fff;
     
@@ -50,23 +53,32 @@ header{
 
 .person-cards-container{
     max-width: 1080px;
-    margin: 0 auto;
     color: #000; 
     font-size: 0;
-    padding-bottom: 102px;
+    
 }
 
-.person-cards-container .person-card:not(:last-child){
+/* .person-cards-container .person-card:not(:first-child){
     margin-right: 20px;
-}
+    margin-bottom: 20px;
+} */
 
 .person-card{
     display: inline-block;
-    width: 32%;
+    width: 31.2%;
     color: black;
     padding: 20px;
     background-color: #fff;
     font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    
+    
+    > img{
+        width: 100%;
+        height: 230px;
+    }
 
     > h3{
         font-size: 22px;
@@ -83,9 +95,9 @@ header{
     }
 }
 
-.person-card *:not(:last-child){
+/* .person-card *:not(:first-child){
     margin-bottom: 16px;
-}
+} */
 
 /* .person-card *:last-child{
     margin-bottom: 20px;
@@ -107,30 +119,38 @@ header{
     line-height: normal;
     padding-bottom: 50px;
 
-    p:first-child{
-        margin-bottom: 20px;
-    }
-
-    p > span{
+    h2 > span{
         font-weight: 700;
     }
 
-    p:last-child{
+    .text > p{
         font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
+
 }
 
-.text-container > p:last-of-type{
-    font-size: 22px;
+.text > h2,
+.text > p {
     margin-bottom: 20px;
+}
+
+ul{
+    margin-left: 10px;
 }
 
 
 li{
+    display: block;
     font-size: 20px;
-    line-height: 51px;
+    margin-bottom: 25px;
     color: #4F4F4F;
-    vertical-align: middle;
+    margin-left: 40px;
+
+
+
 }
 
 li::before{
@@ -139,9 +159,9 @@ li::before{
     background-position: center ;
     width: 22px;
     height: 22px;
-	display: inline-block;
-    margin-right: 15px;
-    vertical-align: middle;
+     margin-left: -50px;
+    margin-bottom: -25px;
+    display: block;
 }
 
 footer{
