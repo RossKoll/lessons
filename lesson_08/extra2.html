@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/extra2.css">
+    <style>
+        main {
+            text-decoration: none; /*- does not work for all*/
+            
+        }
+        a{
+            text-decoration: none; 
+            color: black;
+        }
+
+        .main-container div{
+            color: green;
+        }
+
+        .grand-child + div{
+            color: red;
+        }
+
+        .child-container ~ div{
+            color: violet;
+        }
+
+        .nested-css + .child{
+            color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="img/pexels-tomfisk-7086836.jpg"  width="350px" alt="">
+        <a href="https://google.com" target="_blank" title="gOOgle">google
+            <img src="img/image2.png" alt="">
+            google
+        </a>
+
+        <h2>
+            <a href="https://rozetka.com.ua/ua" target="_blank">rozetka h2</a>
+        </h2>
+
+        <h3>
+            <a href="https://rozetka.com.ua/ua" target="_blank">rozetka h3</a>
+        </h3>
+        
+        <div class="main-container">parent
+            <div class="child-container">child
+                <div class="grand-child">
+                    grand child
+                </div>
+                <div class="grand-child">grand child 2</div>
+            </div>
+            <div class="child-container">child 2</div>
+        </div>
+
+        <div class="nested-css">
+            <p class="child">one
+                    <a href="@soeID" class="child">tested link1</a>
+            </p>
+            <p class="child">two</p>
+            <p class="child">there</p>
+            <p class="child">four
+                <a href="#soneID" class="child">tested link 2</a>
+            </p>
+            <p class="child">five</p>
+            <p class="child">six</p>
+        </div>
+        <p class="child">sibling to nested-css</p>
+        <p class="child">sibling to nested-css 2</p>
+
+        <div class="text-with-scrolling">
+            <h3>Text with scroll</h3>
+            <div class="overlay"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quam consectetur minima corrupti excepturi cupiditate quidem est at perferendis repellat voluptatum consequuntur? Ea explicabo corrupti vitae accusantium obcaecati officiis in.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae optio reprehenderit maxime aspernatur veniam necessitatibus eum, obcaecati voluptates iure consequatur impedit, ad voluptatum magnam eius cumque perspiciatis debitis quisquam iusto?</p>
+        </div>
+
+        <!-- #5 paadding / margin -->
+
+        <div class="wrapper-padding">
+            <div class="padding-section">
+                <div class="inner"></div>
+            </div>
+    
+            <div class="padding-section">
+                <div class="inner"></div>
+            </div>
+
+            <div class="padding-section">
+                <div class="inner"></div>
+            </div>
+
+            <div class="padding-section">
+                <div class="inner"></div>
+            </div>
+        </divwrapper-paadding>
+    </main>
+    
+</body>
+</html>
