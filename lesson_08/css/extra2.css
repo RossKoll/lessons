@@ -1,0 +1,53 @@
+.text-with-scrolling {
+    max-width: 500px;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+    
+}
+
+.text-with-scrolling > p:not(:last-of-type){
+    width: 300px;
+    overflow: auto;
+    height: 35px;
+    color:black;
+    font-weight: bold;
+    background-image: url("../img/pexels-pixmike-413195.jpg");
+    word-spacing: 5px;
+    line-height: 1.125;
+    text-align: justify;
+    padding: 0 5px;
+    box-sizing:border-box;
+        
+}
+
+.text-with-scrolling > p:last-of-type{
+    text-align: justify;
+}
+
+.wrapper-padding {
+    max-width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.padding-section {
+    width: 38%;
+    background-color: rgb(100, 100, 100);
+    min-height: 100px;
+    padding: 5px 45px 25px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    > .inner{
+        background-color: gray;
+        height:100px;
+
+
+        
+    }
+}

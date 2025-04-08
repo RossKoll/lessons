@@ -1,0 +1,56 @@
+@import url('reset.css');
+body{
+    background-color: #1d1d27;
+    
+}
+
+.header-text {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #70452f;
+    padding-left: 5px;
+    font-weight: bold;
+    color: rgb(228, 203, 158);
+    font-size: 24px;
+}
+
+.inner-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #70452f;
+    border-radius: 0 0 90px 90px;
+    font-size: 0;
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #caa281;
+    padding: 50px 20px 50px 20px;
+    border-radius: 0 0 90px 90px;
+    font-size: 24px;
+}
+.text{
+    padding-left: 50px;
+    padding-bottom: 35px;
+}
+
+p{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    color: #1d1d27;
+}
+p:hover{
+    color: wheat;
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #00ff33, 0 0 10px #00ff33, 0 0 15px #00ff33, 0 0 20px #00ff33, 0 0 25px #00ff33, 0 0 30px #00ff33;
+    /* Note : і Так, я памятаю - ми 'transition' не вчили! Але ж гарно виглядає ;) */
+    transition: all 0.5ms;
+}
+
+img:hover{
+    /* Note : так, так само памятаю - ми 'transition'  і 'transform' не вчили! Але ж гарно виглядає ;) */
+    transform: scale(1.2);
+    transition: all 0.5ms;
+}
+
