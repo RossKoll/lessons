@@ -3,6 +3,9 @@ body{
     background-color: #1d1d27;
     
 }
+main{
+    padding-bottom: 50px;
+}
 
 .header-text {
     max-width: 1050px;
@@ -20,6 +23,7 @@ body{
     background-color: #70452f;
     border-radius: 0 0 90px 90px;
     font-size: 0;
+    padding-bottom: 50px;
 }
 
 .section {
@@ -52,5 +56,12 @@ img:hover{
     /* Note : так, так само памятаю - ми 'transition'  і 'transform' не вчили! Але ж гарно виглядає ;) */
     transform: scale(1.2);
     transition: all 0.5ms;
+}
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    
 }
 
