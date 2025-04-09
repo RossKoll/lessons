@@ -1,0 +1,84 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inconsolata:wght@400&display=swap');
+body{
+    background-color: #0e3851;
+    
+}
+.container, 
+.wrapper{
+    font-family: 'Fredericka the Great', cursive;
+}
+
+main{
+    padding-bottom: 30px;
+    
+}
+
+.header-text {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #eb7f71;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #0e3851;
+    font-size: 22px;
+    letter-spacing: 2px;
+    min-height: 25px;
+}
+
+.inner-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #eb7f71;
+    border-radius: 0 0 90px 90px;
+    font-size: 0;
+    height: auto;
+    min-height: 300px;
+    padding-bottom: 50px;
+}
+
+.section {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f8c652;
+    padding: 50px 20px 50px 20px;
+    border-radius: 0 0 90px 90px;
+    min-height: auto;
+    
+}
+
+.text{
+    margin-bottom: 25px;
+}
+
+img{
+    max-width: 300px;
+    margin-right: 25px;
+}
+
+p{
+    font-size: 24px;
+    display: inline-block;
+}
+
+
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    
+}
+
+.text:hover{
+    text-shadow: #25261863 0px 54px 55px, #25261863 0px -12px 30px, #25261863 0px 4px 6px, #25261863 0px 12px 13px, #25261863 0px -3px 5px;
+    transition: all 0.3ms;
+    scale: 1.05;
+    
+}
+
+img{
+    border-radius: 15px;
+    border: white 3px solid;
+}
+

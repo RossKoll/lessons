@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homework_screen_resolution.css">
+    <title>Different screen resolution</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="header-text">Different screen resolution</div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="inner-container">
+                    <div class="section">
+                        <div class="text">
+                            <div class="first-section">
+                                <p>picture added via 'picture' tag : </p>
+                                <picture>
+                                    <source srcset="img/about-us-1x.avif 1x, img/about-us-2x.avif 2x, img/about-us-3x.avif 3x">
+                                    <img src="img/about-us.jpg" alt="man standing in the mountain in front of valley surrounded with mountains">
+                                </picture>
+                            </div>
+
+                            <div class="second-section">
+                                <p>picture added via 'image' tag with 'srcset' : </p>
+                                <img srcset="img/about-us-1x.avif 1x, img/about-us-2x.avif 2x, img/about-us-3x.avif 3x" src="img/about-us.jpg" alt="man standing in the mountain in front of valley surrounded with mountains">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>All rights reserved</footer>
+    </div>
+    
+</body>
+</html>
