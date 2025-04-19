@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+body {
+	font-family: "Gilroy", sans-serif;
+	background-color: #333;
+	color: #fff;
+    
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"]{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blocks {
+}
+.blocks--margin {
+	margin-bottom: 30px;
+    /* height: 700px; */
+}
+.blocks__item {
+	text-align: center;
+	padding: 15px;
+}
+.blocks__item--brown {
+	background-color: #794f45;
+}
+.blocks__item--puprule {
+	background-color: #77608d;
+}
+.blocks__item--green {
+	background-color: #7a956b;
+}
+
+.blocks__item:not(:last-of-type){
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------------------------- */
+
+.blocks__item--puprule {
+	position: relative;
+	top: 30px;
+	left: 20%;
+    z-index: 1;
+	/*
+	z-index: 1;
+	left: 10%;
+	top: 20%;
+	 */
+}
