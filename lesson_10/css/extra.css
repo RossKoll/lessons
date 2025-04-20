@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 body {
 	font-family: "Gilroy", sans-serif;
@@ -22,6 +23,7 @@ body {
 }
 .blocks--margin {
 	margin-bottom: 30px;
+	position: relative;
     /* height: 700px; */
 }
 .blocks__item {
@@ -45,13 +47,188 @@ body {
 /* ----------------------------------------------------- */
 
 .blocks__item--puprule {
-	position: relative;
+	position: absolute;
 	top: 30px;
 	left: 20%;
     z-index: 1;
+	/* opacity: 0;
+	visibility: hidden; */
 	/*
 	z-index: 1;
 	left: 10%;
 	top: 20%;
 	 */
 }
+/* .blocks:hover .blocks__item--puprule{
+	opacity: 1;
+	 visibility: visible; 
+} */
+
+
+/* --------- profie card ---------*/
+.card-container {
+	max-width: 200px;
+	margin: 0 auto;
+}
+.profile {
+	border: #77608d 1px solid;
+	padding: 10px;
+}
+.profile-image {
+	padding-bottom: 5px;
+	border-radius: 50%;
+}
+.profile-title {
+	font-family: fantasy;
+	letter-spacing: 3px;
+}
+.profile-bio {
+	font-size: 12px;
+	color: gray;
+}
+.profie-button {
+	background-color: lightblue;
+	border: none;
+	padding: 3px;
+	cursor: pointer;
+	margin-left: auto;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	
+}
+
+.profile-info {
+	padding-bottom: 5px;
+}
+
+.button-wrapper {
+	text-align: right;
+}
+
+.profie-button:hover{
+	opacity: 0.7;
+	box-shadow: 0px 5px 10px rgba(211, 51, 51, 0.15);
+}
+
+
+/* ------- homework -- product-card ---------- */
+
+.container-product{
+	background-color: #fff;
+}
+.product-card {
+	width: 264px;
+	height: 327px;
+	border: 1px solid #E6E6E6;
+	font-size: 0;
+}
+
+.product-card__wrap{
+	padding: 5px;
+	position: relative;
+}
+.product-card__image {
+	width: 254px;
+    height: 230px;
+	object-fit: cover;
+
+}
+
+.product-card__content{
+	padding: 12px;
+	width: 100%;
+	color: #1A1A1A;
+}
+.product-card__info {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+}
+
+.info__title {
+	font-size: 14px;
+	line-height: 150%;
+	color: #4D4D4D;
+}
+.info__price {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%;
+}
+.product-card__shopping-button {
+	display: inline-block;
+	vertical-align: middle;
+	width: 45%;
+    text-align: right; 
+}
+
+.shopping-button__image{
+	position: relative;
+	left: 32%;
+	bottom: 11px;
+	z-index: 100;
+}
+
+.shopping-button__background{
+	position: relative;
+	left: 5px;
+}
+
+
+/* product card hover */
+
+.product-card:hover {
+	border-color: #00B207;
+}
+
+.product-card:hover .info__title{
+	color: #2C742F;
+}
+
+.product-card:hover .shopping-button__image path{
+	stroke :#FFFFFF;
+}
+
+.product-card:hover .shopping-button__background circle{
+	fill: #00B207;
+}
+
+
+/* CTA - call to action block */
+
+.product-card__cta{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.like-icon{
+	position: absolute;
+	right: 23px;
+	top: 15px;
+	z-index: 101;
+}
+
+.like-icon-background{
+	position: absolute;
+	right: 13px;
+	top: 5px;
+}
+
+.eye-icon{
+	position: absolute;
+	right: 23px;
+	top: 65px;
+	z-index: 101;
+}
+
+.eye-icon-background{
+	position: absolute;
+	right: 13px;
+	top: 55px;
+}
+
+
+.product-card:hover .product-card__cta{
+	opacity: 1;
+	visibility: visible;
+}
+
