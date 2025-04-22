@@ -87,7 +87,7 @@ body {
 
 .content__text{
 	display: inline-block;
-	width: 55%;
+	width: 60%;
 	padding: 50px 50px 40px 70px;
 }
 
@@ -134,11 +134,20 @@ p{
 .big-cycle{
 	position: absolute;
 	left: -7%;
-	top: 20%;
+	top: 10%;
 }
 
 .small-cycle{
 	position: absolute;
 	left: -7%;
-	top: 10%;
+	top: 5%;
 }
+
+
+.platform-text{
+	width: 65%;
+	padding-left: 250px;
+}
+
+
+
