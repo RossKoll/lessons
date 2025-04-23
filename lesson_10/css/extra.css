@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 body {
-	font-family: "Gilroy", sans-serif;
+	/* font-family: "Gilroy", sans-serif; */
 	background-color: #333;
 	color: #fff;
     
@@ -134,25 +134,27 @@ body {
 
 }
 
-.product-card__content{
+.product-card__section{
 	padding: 12px;
 	width: 100%;
 	color: #1A1A1A;
 }
 .product-card__info {
 	display: inline-block;
-	font-family: "Poppins", sans-serif;
+	
 }
 
 .info__title {
 	font-size: 14px;
 	line-height: 150%;
 	color: #4D4D4D;
+	font-family: 'Poppins', sans-serif;
 }
 .info__price {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 150%;
+	font-family: 'Poppins', sans-serif;
 }
 .product-card__shopping-button {
 	display: inline-block;
