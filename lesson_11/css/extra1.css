@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: darkgray;
+    min-height: 100%;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 15px;
+}
+  
+.cards {
+    margin: 0 -30px -30px 0;
+    padding: 20px;
+    font-size: 0;
+}
+  
+.card {
+    padding: 0 30px 30px 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: 'Roboto',sans-serif;
+    /* background-color: rgb(184, 225, 241); */
+}
+  
+.card__inner {
+    height: 200px;
+    background-color: skyblue;
+}
+
+.card__inner--text-center{
+    text-align: center;
+    line-height: 200px;
+    height: 100%;
+}
+
+.card:hover .translate__pixel{
+    transform: translate(20px, 20px);
+    height: 100%;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover{
+    font-size: 18px;
+    color: rgb(15, 70, 219);
+
+}
+
+.card:hover .translate__percent{
+    transform: translate(20%, 20%);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover .translate__x{
+    transform:translateX(40px);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover .scale__outside{
+    transform:scale(1.1);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover .scale__inside{
+    transform:scale(0.7);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover .scale__dif{
+    transform:scale(1.1, 1.7);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
+.card:hover .scale__flip{
+    transform:scale(1, -1.2);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
