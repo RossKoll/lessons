@@ -33,6 +33,7 @@
 .card__inner {
     height: 200px;
     background-color: skyblue;
+    perspective: 300px;
 }
 
 .card__inner--text-center{
@@ -68,6 +69,13 @@
     transition: all 0.3s;
 }
 
+.card:hover .translate__y{
+    transform:translateY(20px);
+    height: 200px;
+    background-color: rgb(57, 187, 238);
+    transition: all 0.3s;
+}
+
 .card:hover .scale__outside{
     transform:scale(1.1);
     height: 200px;
@@ -95,3 +103,104 @@
     background-color: rgb(57, 187, 238);
     transition: all 0.3s;
 }
+
+.card:hover .rotate__all{
+    transform: rotate(45deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .rotate__x{
+    transform: rotateX(45deg) ;
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .rotate__y{
+    transform: rotateY(45deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .rotate__minus{
+    transform: rotate(-45deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .skew__all{
+    transform: skew(10deg,10deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .skew__x{
+    transform: skewX(-10deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .skew__y{
+    transform: skewY(10deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .origin__transform{
+    transform: rotate(45deg);
+    transform-origin: top left;
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+h2{
+    font-size: 24px;
+    color: rgb(15, 70, 219);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+h2:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.card:hover .translate3D__all{
+    transform: translate3d(20px, 40px, -20px);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .scale3D__all{
+    transform: scale3d(1.1,1.2,1.1);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .rotate3D__all{
+    transform: rotate3d(1,1,1, 45deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+}
+
+.card:hover .preserve3D__all{
+    transform: rotateY(45deg);
+    background-color: rgb(57, 187, 238);
+    transition: transform 0.3s;
+    
+}
+
+.preserve3D__all{
+    perspective-origin: center;
+    transform-style: preserve-3d;
+    
+}
+
+.preserve3D:hover{
+    background-color: rgb(13, 47, 61);
+}
+
