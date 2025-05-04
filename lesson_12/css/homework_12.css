@@ -41,6 +41,8 @@ body {
 	border-radius: 0px 0 50px 50px;
 	background-color: rgb(78, 78, 78);
 	margin-left: 10px;
+    animation: weels-rotate 3s linear infinite;
+    animation-play-state: paused;
 }
 .weel {
 	width: 80px;
@@ -112,8 +114,9 @@ body {
 	background-color: #000;
 	transform: rotateX(45deg);
 	position: relative;
-	bottom: -10px;
-	
+	bottom: -10px;	
+    animation: tower-rotate 3s linear infinite;
+    animation-play-state: paused;
 }
 
 .tank-muzzle {
@@ -122,6 +125,8 @@ body {
 	background-color: #000;
 	display: inline-block;
 	margin-bottom: 30px;
+    animation: mazzle-rotate 3s infinite;
+    animation-play-state: paused;
 }
 
 .tank-top {
@@ -130,6 +135,8 @@ body {
 	background-color:#000;
 	border-radius: 10px 10px 0 0;
 	margin-left: 30px;
+    animation: middle-rotate 3s infinite;
+    animation-play-state: paused;
 
 }
 
@@ -198,7 +205,11 @@ body {
 .page__container:hover .well--rotation-big,
 .page__container:hover .weel--rotation,
 .page__container:hover .baackground-image,
-.page__container:hover .text > div{
+.page__container:hover .text > div,
+.page__container:hover .weels,
+.page__container:hover .tank-muzzle,
+.page__container:hover .tank-towr,
+.page__container:hover .tank-top{
     animation-play-state: running;
 }
 
@@ -393,4 +404,55 @@ body {
       100% {
         background-position: 0% 100%;
       }
+}
+
+@keyframes tower-rotate{
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left bottom    
+    }
+    50%{ transform: rotate(3deg);
+        transform-origin: right bottom;}
+    100% { 
+        transform: rotate(0deg);
+        transform-origin: right bottom;   
+    }
+}
+
+@keyframes middle-rotate{
+    0% {
+        transform: rotate(0deg);
+        transform-origin: right bottom    
+    }
+    50%{ transform: rotate(3deg);
+        transform-origin: left bottom;}
+    100% { 
+        transform: rotate(0deg);
+        transform-origin: left bottom;   
+    }
+}
+
+@keyframes weels-rotate{
+    0%  {transform: rotate(0deg);}
+    25% {transform: rotate(3deg); }     
+    
+    50%{ transform: rotate(-3deg);
+        }
+    100% { 
+        transform: rotate(0deg);
+           
+    }
+}
+
+@keyframes mazzle-rotate{
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left     
+    }
+    50%{ transform: rotate(3deg);
+        transform-origin: left bottom;}
+    100% { 
+        transform: rotate(0deg);
+        transform-origin: left bottom;   
+    }
 }
