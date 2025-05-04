@@ -1,0 +1,396 @@
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Компоненти */
+@import url("button.css");
+/* .... */
+
+/* Основні стилі */
+body {
+	font-family: "Gilroy", sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.page {
+	padding: 30px;
+}
+.page__container{
+	position: relative;
+}
+.weels {
+	max-width: 500px;
+	position: relative;
+	height: 100px;
+	border: 10px dashed #000 ;
+	border-style:double;
+	border-radius: 0px 0 50px 50px;
+	background-color: rgb(78, 78, 78);
+	margin-left: 10px;
+}
+.weel {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: darkgray;
+	border: 10px dashed #000;
+	position: absolute;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+.weel:first-child {
+	/* left: 20px; */
+	bottom: 0;
+}
+.weel:nth-child(2){
+	bottom: 0;
+	left: 100px;
+}
+
+.weel:nth-child(3){
+	bottom: 0;
+	left: 200px;
+}
+.weel:nth-child(4){
+	bottom: 0;
+	left: 300px;
+}
+.weel:last-child {
+	right: 0px;
+}
+
+.weel::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #141313;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+.tank{
+	font-size: 0;
+}
+
+.wrrapper{
+	width: 300px;
+	height: 100px;
+	perspective: 300px;
+	perspective-origin: center;
+	margin-left: 100px;
+	display: inline-block;
+}
+
+.figure{
+	display: inline-block;
+	width: 45%;
+}
+
+/* ---- tank ----- */
+.tank-towr {
+	width: 300px;
+	height: 100px;
+	background-color: #000;
+	transform: rotateX(45deg);
+	position: relative;
+	bottom: -10px;
+	
+}
+
+.tank-muzzle {
+	width: 150px;
+	height: 10px;
+	background-color: #000;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.tank-top {
+	width: 450px;
+	height: 50px;
+	background-color:#000;
+	border-radius: 10px 10px 0 0;
+	margin-left: 30px;
+
+}
+
+.midle-part{
+	width: 515px;
+	height: 20px;
+	background-color: #000;
+}
+
+.midle-part::before
+{
+	content: "";
+	width: 10px;
+	height: 60px;
+	background-color: #000;
+
+}
+
+
+.midle-part::after{
+	display: inline-block;
+	content: "";
+	width: 10px;
+	height: 60px;
+	background-color: #000;
+	position: relative;
+	left: 495px;
+	top: 20px;
+	transform: rotate(-45deg);
+	transform-origin: top left
+}
+
+/*  ---- tractor ---- */
+
+.figure-tractor{
+	display: inline-block;
+	position: relative;
+	right: -150px;
+	top: 60px
+
+}
+
+.weels-tractor{
+	max-width:350px;
+	height: 100px;
+	border: none;
+	position: relative;
+	margin-left: 100px;
+	right: 0px;
+}
+.weels-tractor > .weel {
+	height: 180px;
+	width: 180px;
+}
+
+.well--rotation-big{
+    animation: rotate 6s linear  infinite ;
+    animation-play-state: paused;
+}
+
+.weel--rotation{
+    animation: rotate 3s linear  infinite ;
+    animation-play-state: paused;
+    
+}
+.page__container:hover .well--rotation-big,
+.page__container:hover .weel--rotation,
+.page__container:hover .baackground-image,
+.page__container:hover .text > div{
+    animation-play-state: running;
+}
+
+.weels-tractor > .weel:nth-child(2){
+
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin-left: 150px;
+}
+
+.tractor-tower{
+
+	width: 150px;
+	height: 100px;
+	background-color: #000;
+	margin-left: 180px;
+	border-radius:0 50% 0 0;
+	
+
+}
+.tractor-midle{
+	width: 250px;
+	height: 50px;
+	background-color: #000;
+	margin-left: 180px;
+	position: absolute;
+}
+
+.tractor-midle::before{
+	content: "";
+	width: 100px;
+	height: 15px;
+	background-color: #000;
+	position: relative;
+	left: -85px;
+	top: 60px;
+	transform: rotate(-30deg);
+	transform-origin: top left
+}
+.tractor-body{
+	width: 270px;
+	height: 120px;
+	background-color: #000;
+	margin-left: 180px;
+	position: relative;
+	top:30px
+}
+
+
+/* --- chain ---- */
+.chain {
+	display: inline-block;
+	white-space: nowrap;
+	position: absolute;
+	left: 575px;
+	bottom: 50px;
+	transform: rotate(-15deg);
+	transform-origin: top left
+  }
+  
+  .link {
+	display: inline-block;
+  	width: 30px;
+  	height: 30px;
+  	border: 3px solid black;
+  	border-radius: 50%;
+  	margin-left: -12px; 
+  	background-color: transparent;
+  	vertical-align: middle;
+  }
+  .link:nth-child(2){
+	transform: rotate(-15deg);
+	transform-origin: top left
+  }
+
+  .link:nth-child(3){
+	transform: rotate(-20deg);
+	transform-origin: top left
+  }
+
+  .link:nth-child(4){
+	transform: rotate(-25deg);
+	transform-origin: top left;
+	bottom: 30px;
+  }
+
+  .link:nth-child(5){
+	transform: rotate(-35deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(6){
+	transform: rotate(-45deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(7){
+	transform: rotate(-55deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(8){
+	transform: rotate(-60deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(9){
+	transform: rotate(-70deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(10){
+	transform: rotate(-80deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(11){
+	transform: rotate(-85deg);
+	transform-origin: top left;
+  }
+
+  .link:nth-child(12){
+	transform: rotate(-90deg);
+	transform-origin: top left;
+  }
+
+  .baackground-image {
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	margin-left: 200px;
+    background: linear-gradient(0deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	z-index: -1;
+	border-radius: 0 0 60px 0;
+    background-size: 100% 300%;
+    background-position: 0% 100%;
+    animation: backgroung-animation 5s linear infinite;
+    animation-play-state: paused;
+}
+
+
+.text > div {
+	display: inline-block;
+	position: relative;
+	right: -300px;
+	color: transparent;
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 55%, rgba(0, 212, 255, 1) 100%);
+    background-size: 100% 300%;
+    background-position: 0% 100%;
+	background-clip: text; 
+    color: transparent;
+    animation: backgroung-animation 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.text > div:first-child{
+	width: 150px;
+	text-align: right;
+}
+
+.text > div:last-child{
+	font-size: 54px;
+	font-weight: bold;
+}
+
+.footer-text {
+	text-align: center;
+	font-size: 14px;
+	color: darkgray;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes backgroung-animation{
+    0% {
+        background-position: 0% 100%;
+      }
+      50% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+}
