@@ -1,0 +1,97 @@
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Компоненти */
+@import url("button.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* .... */
+
+/* Основні стилі */
+body {
+	font-family: "Gilroy", sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+
+	
+}
+
+[class*="__container"]{
+	display: flex;
+	background-color: rgb(190, 181, 125);
+	justify-content:flex-start;
+	align-items: center;
+	min-height: 600px;
+	gap: 20px;
+}
+.box{
+	display: flex;
+	background-color: blue;
+	font-size: 36pt;
+	/* flex-shrink: 1; */
+	flex-grow: 0;
+	/* object-fit: contain; */
+	
+}
+
+.profile-cards{
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+
+.card{
+	display: flex;
+	flex-basis: 387px;
+	padding: 20px;
+	flex-direction: column;
+	gap: 16px;
+	/* align-self: stretch; */
+	border:2px solid black;
+	font-family: "Inter";
+	flex-shrink: 1;
+
+}
+
+.card__image {
+	max-height: 266px; 
+	overflow: hidden;  
+  }
+
+.card__info{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card__title{
+	font-size: 22px;
+	font-weight: 600;
+	color: #000;
+}
+
+.card__text{
+	min-height: 76px;
+	font-size: 15px;
+	color: #4F4F4F;
+	
+}
+
+
+
+
