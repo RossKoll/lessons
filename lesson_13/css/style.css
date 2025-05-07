@@ -12,7 +12,7 @@
 
 /* Основні стилі */
 body {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Inter", sans-serif;
 	background-color: #333;
 	color: #fff;
 }
@@ -21,30 +21,45 @@ body {
 	min-height: 100%;
 }
 
-[class*="__container"] {
-	max-width: 1260px;
+.page__container{
 	margin: 0 auto;
-
-	
 }
 
 [class*="__container"]{
+	max-width: 1400px;
+}
+
+.faculty__container{
+	max-width: 1260px;
 	display: flex;
-	background-color: rgb(190, 181, 125);
-	justify-content:flex-start;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	min-height: 600px;
 	gap: 20px;
+	padding-bottom: 102px;
+
 }
-.box{
-	display: flex;
-	background-color: blue;
-	font-size: 36pt;
-	/* flex-shrink: 1; */
-	flex-grow: 0;
-	/* object-fit: contain; */
+
+
+
+.page{
+	background-color:#412672 ;
+}
+
+.title__text{
+	font-size: 38px;
+	width: 100%;
+    margin-bottom: 31px;
+	
 	
 }
+
+h2 span{
+	font-weight: 700;
+}
+	
+
 
 .profile-cards{
 	display: flex;
@@ -61,16 +76,18 @@ body {
 	padding: 20px;
 	flex-direction: column;
 	gap: 16px;
-	/* align-self: stretch; */
-	border:2px solid black;
-	font-family: "Inter";
+	font-family: "Inter",sans-serif;
 	flex-shrink: 1;
+	background: #FFF;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+	
 
 }
 
 .card__image {
 	max-height: 266px; 
-	overflow: hidden;  
+	overflow: hidden;
+	
   }
 
 .card__info{
@@ -92,6 +109,67 @@ body {
 	
 }
 
+.card__button{
+	color: #FE3F3F;
+}
 
 
 
+.california__container{
+	max-width: 1400px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 90px;
+	background-color: #FFF;
+	padding-bottom: 72px;
+}
+
+
+.california__image{
+	flex-basis: 764px;
+}
+
+
+.califronia__info{
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	flex-basis: 518px;
+	color: #412672;
+}
+
+
+.califronia__info h2{
+	font-size: 34px;
+}
+
+.california__text{
+	font-size: 22px;
+	color: #412672;
+	
+}
+
+.california__adavantage-list ul{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	
+}
+
+.california__adavantage-list li{
+	display: flex;
+	align-items: center;
+
+}
+.california__adavantage-list li::before{
+	content: "";
+	display: inline-flex;
+	background: url(../img/Frame.svg) 0 0 / 100% no-repeat;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	align-self: flex-start;
+	margin-right: 15px;
+
+}
