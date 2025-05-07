@@ -21,12 +21,13 @@ body {
 	min-height: 100%;
 }
 
-.page__container{
-	margin: 0 auto;
+.faculty{
+	background-color:#412672 ;
 }
-
-[class*="__container"]{
+.faculty__content{
 	max-width: 1400px;
+	margin: 0 auto;
+	
 }
 
 .faculty__container{
@@ -41,11 +42,6 @@ body {
 
 }
 
-
-
-.page{
-	background-color:#412672 ;
-}
 
 .title__text{
 	font-size: 38px;
@@ -113,6 +109,9 @@ h2 span{
 	color: #FE3F3F;
 }
 
+.california{
+	background-color: #FFF;
+}
 
 
 .california__container{
@@ -121,8 +120,9 @@ h2 span{
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 90px;
-	background-color: #FFF;
+	
 	padding-bottom: 72px;
+	margin: 0 auto;
 }
 
 
