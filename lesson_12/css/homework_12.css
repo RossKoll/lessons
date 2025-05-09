@@ -4,9 +4,6 @@
 /* Скидання стилів */
 @import url("reset.css");
 
-/* Компоненти */
-@import url("button.css");
-/* .... */
 
 /* Основні стилі */
 body {
