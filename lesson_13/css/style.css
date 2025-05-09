@@ -4,8 +4,6 @@
 /* Скидання стилів */
 @import url("reset.css");
 
-/* Компоненти */
-@import url("button.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* .... */
@@ -19,44 +17,45 @@ body {
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex-grow: 1;
 }
 
 .faculty{
 	background-color:#412672 ;
 }
+
 .faculty__content{
 	max-width: 1400px;
 	margin: 0 auto;
-	
+	display: flex;
+	justify-content: center;
 }
 
 .faculty__container{
 	max-width: 1260px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	min-height: 600px;
 	gap: 20px;
-	padding-bottom: 102px;
-
+	padding:50px 0 102px;
 }
-
 
 .title__text{
 	font-size: 38px;
 	width: 100%;
     margin-bottom: 31px;
-	
-	
 }
 
 h2 span{
 	font-weight: 700;
 }
 	
-
-
 .profile-cards{
 	display: flex;
 	gap: 20px;
@@ -72,12 +71,9 @@ h2 span{
 	padding: 20px;
 	flex-direction: column;
 	gap: 16px;
-	font-family: "Inter",sans-serif;
 	flex-shrink: 1;
 	background: #FFF;
     box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
-	
-
 }
 
 .card__image {
@@ -109,10 +105,19 @@ h2 span{
 	color: #FE3F3F;
 }
 
+.card:hover{
+	background-color:#FFBE48 ;
+	transform: scale(1.03);
+	transition: transform 0.3s;
+}
+
+.card:hover .card__button a{
+	font-weight: 700;
+}
+
 .california{
 	background-color: #FFF;
 }
-
 
 .california__container{
 	max-width: 1400px;
@@ -120,16 +125,16 @@ h2 span{
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 90px;
-	
+	padding-top: 55px;
 	padding-bottom: 72px;
 	margin: 0 auto;
+	position: relative;
+	left: 105px;
 }
-
 
 .california__image{
 	flex-basis: 764px;
 }
-
 
 .califronia__info{
 	display: flex;
@@ -139,29 +144,27 @@ h2 span{
 	color: #412672;
 }
 
-
 .califronia__info h2{
 	font-size: 34px;
 }
 
 .california__text{
 	font-size: 22px;
-	color: #412672;
-	
+	color: #412672;	
 }
 
 .california__adavantage-list ul{
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	
+	gap: 20px;	
 }
 
 .california__adavantage-list li{
 	display: flex;
 	align-items: center;
-
+	color: #4F4F4F;
 }
+
 .california__adavantage-list li::before{
 	content: "";
 	display: inline-flex;
@@ -171,5 +174,77 @@ h2 span{
 	height: 40px;
 	align-self: flex-start;
 	margin-right: 15px;
+}
+
+.advantage{
+	background-color: #412672;
+}
+
+.advantage__content {
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}
+.advantage__container {
+	max-width: 1260px;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	gap: 30px;
+	padding: 70px  0 ;
+	
+}
+.advantage__text {
+	display: flex;
+	font-size: 24px;
+	justify-content: center;
+}
+
+.advantage__text span{
+	font-weight: 700;
+}
+
+.advantage__icons{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.achivements__box {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.box__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box__info p{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.box-info span{
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.footer{
+	background-color: #412672;
+	
+}
+
+.footer-text{
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	opacity: 0.8;
 
 }
