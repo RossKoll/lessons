@@ -250,3 +250,10 @@ main{
 	opacity: 0.8;
 
 }
+.header{
+	background-color: #412672;
+}
+.header__container{
+	opacity: 0;
+	visibility: hidden;
+}
