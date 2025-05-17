@@ -221,7 +221,7 @@ p{
     border: 1px solid #E6E6E6;
     border-radius: 8px;
     overflow: clip;
-    
+    transition: box-shadow 0.3s;
     
 }
 
@@ -229,6 +229,7 @@ p{
     display: flex;
     aspect-ratio: 424 / 324 ;
     overflow: hidden;
+    position: relative;
     
 }
 
@@ -239,6 +240,7 @@ p{
     aspect-ratio: 424 / 324 ;
     overflow: hidden;
     transition: transform 1s;
+    
 }
 .item_info {
     padding: 24px;
@@ -311,14 +313,53 @@ p{
     
 }
 
-.item__block:hover p{
+.item__block:hover{
+    border: none;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.item__block:hover p:not(.date__number):not(.date__month){
     color: #2C742F;
 }
 
 .item_info a:hover{
-    transform: scale(0.95);
+    transform: scale(1.05);
 }
 
 .item__block:hover img{
     transform: scale(1.2);
+}
+
+.card__date {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 100;
+    padding: 6px 15px 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.85);
+    text-align: center;
+
+
+}
+
+.date__number {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%
+}
+.date__month {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+
+.footer__container{
+    font-size: 12px;
+    color: #808080;
+    text-align: center;
+    margin-bottom: 15px;
 }
