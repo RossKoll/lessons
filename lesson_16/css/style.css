@@ -157,6 +157,10 @@ body {
 	color: #fff;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 
 .icon-menu {
 	display: none;
