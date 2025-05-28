@@ -43,7 +43,6 @@ body {
 
 .page__items{
 	display: flex;
-	/* gap: 15px; */
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -66,13 +65,19 @@ body {
 	background-position:center 26%; 
     background-repeat: no-repeat;
   	background-size: 100%;
+
 	position: sticky;
 	top: 0;
 	left: 0;
 }
+.header_additional{
+	background: rgba(255, 255, 255, 0.60);
+}
 
 .header__background{
+	
 	backdrop-filter: blur(113.6500015258789px);
+	transition: all 0.2s
 }
 
 
@@ -85,17 +90,21 @@ body {
 	align-items: center;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	transition: backdrop-filter 0.2s ease;
+	
+	/* transition: backdrop-filter 0.2s ease; */
 }
 .header__icon {
 	display: flex;
 	align-items: center;
 	gap: 6px;
+	flex-basis: 211px;
+	text-transform: uppercase;
 }
 
 .header__icon img{
 	position: relative;
 	z-index: 5;
+	max-width: 44px;
 }
 .header__icon h1{
 	font-size: 18px;
@@ -118,6 +127,7 @@ body {
 	white-space: nowrap;
 	position: relative;
 	z-index: 3;
+	flex-basis: 174;
 	
 	
 }
@@ -136,21 +146,22 @@ body {
 	column-gap: 35px;
 	flex-wrap: wrap;
 	align-items: center;
+	
 }
 
 .menu__item {
-	padding-top: 19px;
-	padding-bottom: 19px;
 	display: flex;
 	gap: 8px;
 	align-items: center;
 	position: relative;
 }
 .menu__link {
-	color: #999;
+	color: #000;
 	font-weight: 500;
 	line-height: 1.5;
 	transition: color 0.3s;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .menu__link--current {
@@ -176,11 +187,14 @@ body.menu-open {
 
 @media (max-width: 991.98px) {
 	.menu__list {
-		column-gap: 20px;
+		column-gap: 10px;
 	}
 }
 
 @media (max-width: 767.98px){
+	body.menu-open {
+  		overflow: hidden;
+	}
 
 	.icon-menu {
 		display: block;
@@ -234,7 +248,7 @@ body.menu-open {
 		z-index: 3;
 		background-color: grey;
 		padding: 95px 15px 30px 15px;
-		transition: all 0.3s;
+		transition: all 0.2s;
 		
 	}
 	.menu__body::before {
@@ -246,12 +260,14 @@ body.menu-open {
 		z-index: 13;
 		height: 75px;
 		transition: all 0.3s;
-		background-color: #fff;
+		background-color: #ffffffee;
 	}
 
 	.menu-open .menu__body,
 	.menu-open .menu__body::before {
 		right: 0;
+		transition: all 0.2s;
+		/* transition: all 4s; */
 	}
 
 	.menu__list {
@@ -275,9 +291,7 @@ body.menu-open {
 		font-weight: 600;
 	}
 
-  	/* body.menu-open .header__container {
-    	backdrop-filter: none;
-	} */
+  	
 	body.menu-open .header__background{
 		backdrop-filter: none;
 	}
@@ -310,5 +324,9 @@ body.menu-open {
 @media (max-width : 470px){
 	.header__icon h1{
 		display: none;
+	}
+
+	.header__icon{
+		flex-basis: 44px;
 	}
 }
