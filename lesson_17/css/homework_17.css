@@ -3,13 +3,15 @@
 /* Скидання стилів */
 @import url("reset.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+
 /* .... */
 
 /* Основні стилі */
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: "KoPubBatang", serif;
 	color: #fff;
-	font-size: 14px;
+	font-size: 18px;
 }
 .wrapper {
 	overflow: clip;
@@ -42,9 +44,14 @@ body {
     display: flex;
 	flex-direction: column;
 	flex: 1 1 200px;
-	
-
+    gap: 14px;
+    margin-bottom: 14px;
 }
+
+.--margin_bottom {
+  margin-bottom: 100px;
+}
+
 .item__link {
     display: flex;
 }
@@ -56,19 +63,38 @@ body {
     object-fit: cover;
 }
 .item__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 .item__name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2C2C2C;
 }
 .item__cta {
+    display: flex;
+    gap: 20px;
 }
 .item__price {
+    font-family: "Carme", sans-serif;
+    font-weight: 400;
+    color: #4E4E4E;
+    font-size: 18px;
 }
 
+.fleur_button button{
+    background-color: #DBCCBA;
+    padding: 9px 30px;
+    outline: 2px solid #DBCCBA;
+    outline-offset:9px;
+    transform: translate(11px);
+}
 
 .fleur_block{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
     column-gap: 30px;
     row-gap: 37px;
     font-size: 24px;
@@ -82,4 +108,87 @@ body {
     grid-column: 1 / span 2;
     padding-top: 52px;
     padding-bottom: 50px;
+    font-weight: 300;
+}
+
+@media(max-width: 767px){
+    .main__fleurs{
+        flex-direction: column-reverse;
+		gap: 15px;
+    }
+
+    .fleur_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        
+    }
+
+    .item-span{
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fleur_button button{
+        width: 80%;
+
+    }
+
+    .--margin_bottom{
+        margin-bottom: 0px;
+    }
+
+    .fleur_block{
+        row-gap: 30px;
+    }
+
+    .main__fleurs{
+        padding-top: 20px;
+    }
+
+    .fleur_block h2{
+        font-size: 52px;
+        padding: 20px 0px;
+    }
+
+
+}
+
+@media(max-width: 430px){
+    .fleur_block{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 15px;
+        row-gap: 20px;
+        font-size: 20px;
+    }
+
+    .fleur_block h2{
+        grid-column: 1;
+        font-size: 42px;
+        padding: 20px 0px;
+    }
+
+    .fleur_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+
+    .item-span{
+        grid-column: span 1;
+    }
+
+    .main__fleurs{
+        padding-top: 20px;
+    }
+
+    
+
+
+  
+
 }
