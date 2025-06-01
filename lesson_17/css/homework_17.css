@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /* .... */
 
 /* Основні стилі */
@@ -20,7 +22,7 @@ body {
 }
 
 [class*="__container"]{
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
 }
 
@@ -28,6 +30,8 @@ body {
     display: flex;
     gap: 31px;
     padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .fleur_section {
@@ -45,7 +49,7 @@ body {
 	flex-direction: column;
 	flex: 1 1 200px;
     gap: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 14px;;
 }
 
 .--margin_bottom {
@@ -54,6 +58,8 @@ body {
 
 .item__link {
     display: flex;
+    overflow: hidden;
+    
 }
 
 .item__link img{
@@ -61,7 +67,9 @@ body {
     height: 100%;
     aspect-ratio: 400 / 427;
     object-fit: cover;
+    transition: transform 0.3s;    
 }
+
 .item__info {
     display: flex;
     justify-content: space-between;
@@ -83,7 +91,9 @@ body {
     font-size: 18px;
 }
 
+
 .fleur_button button{
+    color: #2C2C2C;
     background-color: #DBCCBA;
     padding: 9px 30px;
     outline: 2px solid #DBCCBA;
@@ -111,10 +121,28 @@ body {
     font-weight: 300;
 }
 
+button::after{
+    content: "";
+    background-image: url("../img/right_arrow.svg");
+	background-position: right;
+	background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 23px;
+    height: 14px;
+}
+
+@media (any-hover:hover){
+    .item:hover .item__link > img{
+    transform: scale(1.1);
+    }
+}
+
 @media(max-width: 767px){
     .main__fleurs{
         flex-direction: column-reverse;
 		gap: 15px;
+        padding: 0px 10px;
     }
 
     .fleur_section{
@@ -124,7 +152,7 @@ body {
         
     }
 
-    .item-span{
+    .--item-span{
         grid-column: span 2;
         display: flex;
         justify-content: center;
@@ -178,17 +206,198 @@ body {
         
     }
 
-    .item-span{
+    .--item-span{
         grid-column: span 1;
     }
 
     .main__fleurs{
         padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
+}
+
+
+
+
+/* ========= Eco Bazar ========== */
+
+.feature-products__container{
+    padding-bottom: 40px;
+}
+
+.feature-products__container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Product cards */
+.products__cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.card_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card__item {
+    flex: 1 1 200px;
+    border: 1px solid #E6E6E6;
+    position: relative;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin: 0 -1px -1px 0;
     
+}
+.card__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 254 / 230;
+    padding: 5px;
+    vertical-align: middle;
+}
+.card__info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card__info p{
+    font-size: 16px;
+}
 
 
-  
+h3{
+    color: #4D4D4D;
+    font-size: 14px;
+}
 
+p{
+    font-weight: 500;
+    
+}
+
+/* CTA - call to action block */
+
+.card__cta {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    right: 11px;
+    top: 10px;
+    gap: 6px;
+    
+}
+
+.cta__add-to-wish,
+.cta__quick-view {
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.cta__add-to-wish img:first-child,
+.cta__quick-view img:first-child{
+    position: relative;
+    right: -30px;
+}
+
+
+.card__item:hover .cta__add-to-wish,
+.card__item:hover .cta__quick-view{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card_add-to-bag{
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color:#F2F2F2 ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.card_add-to-bag img{
+    opacity: 1;
+}
+
+.card__item:hover{
+    border:1px solid #2C742F;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+    z-index: 2;
+    
+}
+
+.card__item:hover .card_add-to-bag img{
+    opacity: 0;
+}
+
+.card__item:hover .card_add-to-bag {
+    background-color: #00B207;
+    background-image: url('../img/bag-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card__item:hover .card__info > h3{
+    color: #2C742F;
+}
+
+.section__one{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 21;
+}
+
+.section__wrapper{
+    display: grid;
+    row-gap: 20px;
+}
+
+.--section-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+.section__hot-deals h3,
+.section__best-seller h3,
+.section__top-rated h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section__two{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    font-family: "Poppins", sans-serif;
+}
+
+.element{
+    display: flex;
+    color: #4D4D4D;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+}
+
+.element__image{
+    max-width: 102px;
 }
