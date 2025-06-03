@@ -98,6 +98,8 @@ h2{
     margin: 0 -1px -1px 0;
     width: 20%;
     max-width: 350px;
+    overflow: hidden;
+    
 }
 
 .card__image {
@@ -106,6 +108,7 @@ h2{
     aspect-ratio: 254 / 230;
     padding: 5px;
     vertical-align: middle;
+    transition: transform 0.3s;
 }
 .card__info {
     padding: 12px;
@@ -196,6 +199,10 @@ p{
     
 }
 
+.card__item:hover img{
+    transform: scale(1.1);
+}
+
 .card__item:hover .card_add-to-bag img{
     opacity: 0;
 }
@@ -210,6 +217,12 @@ p{
 .card__item:hover .card__info > h3{
     color: #2C742F;
 }
+
+.cta__add-to-wish:hover img,
+.cta__quick-view:hover img{
+    transform: scale(1.15);
+}
+
 
 
 /* News */
