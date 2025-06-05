@@ -314,8 +314,9 @@ p{
     right: 10px;
     width: 40px;
     height: 40px;
-    background-color: #f2f2f2;
+    background-color: #FFF;
     border-radius: 50%;
+    border: 1px solid #F2F2F2;
 }
 
 
@@ -404,6 +405,9 @@ p{
     color: #4D4D4D;
     align-items: center;
     border: 1px solid #E6E6E6;
+    position: relative;
+    gap: 12px;
+    font-family: "Poppins", sans-serif;
 }
 
 .element__image{
@@ -419,20 +423,25 @@ p{
     transform: scale(1.1);
 }
 
-.element__info h3{
-    font-family: "Poppins",sans-serif;
+.element__info h4{
     font-weight: 400;
     color: #4D4D4D;
+    line-height: 1.5;
 }
 
 .element__info span{
-    font-family: "Poppins", sans-serif;
+    
     font-weight: 500;
     color: #1A1A1A;
 }
 
 .element:hover{
     border: 1px solid #00B207;
+    
+}
+
+.element:hover h4{
+    color: #2C742F;
 }
 
 
@@ -445,11 +454,66 @@ p{
     z-index: 5;
 }
 
+.element:hover .card__cta--alt{
+    background-color: #fff;
+}
+
+
 .element__info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     position: relative;
 }
 
 .element__info .card__cta{
     display: flex;
     flex-direction: row;
+    
 }
+
+.card__cta--alt{
+    right: -30px;
+    top: 40%;
+    gap: 12px;
+    flex: 1 1 150px;
+    
+    
+    
+    > .cta__add-to-wish,
+    .cta__quick-view{
+        width: 40px;
+        border: 1px solid #F2F2F2;
+        border-radius: 50%;
+    }
+
+    > .card_add-to-bag{
+        bottom: 0px;
+        right: 0px;
+        background: none;
+    }
+
+   
+
+    
+}
+
+.card__cta--alt > .cta__quick-view:hover path,
+.card__cta--alt > .card_add-to-bag:hover path,
+.card__cta--alt > .cta__add-to-wish:hover path{
+    stroke: #fff;
+}
+
+.card__cta--alt > .cta__quick-view:hover svg,
+.card__cta--alt > .card_add-to-bag:hover svg,
+.card__cta--alt > .cta__add-to-wish:hover svg
+{
+    fill: #00B207;
+}
+
+.card__cta--alt > .cta__quick-view:hover,
+.card__cta--alt > .card_add-to-bag:hover,
+.card__cta--alt > .cta__add-to-wish:hover {
+    background-color: #00B207;
+}
+
