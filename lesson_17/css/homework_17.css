@@ -18,6 +18,10 @@ body {
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
+    
+}
+
+.main__section-fleurs{
     background: #F8F3EC;
 }
 
@@ -408,18 +412,22 @@ p{
     position: relative;
     gap: 12px;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
+
 }
 
 .element__image{
     max-width: 102px;
+    transition: transform 0.3s;
 }
 
-.cta__add-to-wish:hover img,
+.cta__add-to-wish:hover svg,
 .cta__quick-view:hover img{
     transform: scale(1.15);
 }
 
-.card__item:hover img{
+.card__item:hover img,
+.element:hover a>img{
     transform: scale(1.1);
 }
 
