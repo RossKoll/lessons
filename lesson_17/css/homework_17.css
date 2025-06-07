@@ -262,7 +262,7 @@ fleur_button button::after{
 .card__image {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 254 / 230;
+    aspect-ratio: 246 / 246;
     padding: 5px;
     vertical-align: middle;
     transition: transform 0.3s;
@@ -272,6 +272,10 @@ fleur_button button::after{
     display: flex;
     flex-direction: column;
     gap: 6px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #1A1A1A;
+    font-weight: 400;
 }
 
 .card__info p{
@@ -426,6 +430,7 @@ p{
     transform: scale(1.15);
 }
 
+.section_add:hover a>img,
 .card__item:hover img,
 .element:hover a>img{
     transform: scale(1.1);
@@ -471,7 +476,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    position: relative;
+    /* position: relative; */
 }
 
 .element__info .card__cta{
@@ -481,10 +486,11 @@ p{
 }
 
 .card__cta--alt{
-    right: -30px;
-    top: 40%;
+    left:35%;
+    top: 45%;
     gap: 12px;
-    flex: 1 1 150px;
+    flex: 1 1 200px;
+    
     
     
     
@@ -525,3 +531,97 @@ p{
     background-color: #00B207;
 }
 
+.section_add {
+    overflow: hidden;
+}
+
+.add__section{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    gap: 16px;
+    min-width: max-content;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #4D4D4D;
+ 
+}
+
+.add__image{
+    width: 100%;         
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.add__section h3{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+}
+
+.add__section span,
+.add__section p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #00B207;
+    line-height: 120%;
+    max-width: 250px;
+}
+
+.add__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add__section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    background-color: #FFF;
+    border-radius: 43px;
+    color: #00B207;
+    font-weight: 600;
+}
+
+.add__section a::after{
+    content: "";
+    background-image: url("../img/add_arrow.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 23px;
+    height: 14px;
+    margin-left: 8px;
+    position: relative;
+    z-index: 3;
+}
+
+.add__section a:hover::after{
+    left: 8px;
+    
+}
+
+.section_add{
+    position: relative;
+}
+
+.add__info p {
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+.add__info span{
+    color: #1A1A1A;
+}
+
+.section_add img{
+    transition: all 0.3s;
+}
