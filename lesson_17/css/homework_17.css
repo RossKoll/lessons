@@ -103,6 +103,7 @@ body {
     outline: 2px solid #DBCCBA;
     outline-offset:9px;
     transform: translate(11px);
+    margin-bottom: 10px;
 }
 
 .fleur_block{
@@ -184,7 +185,6 @@ fleur_button button::after{
         padding: 20px 0px;
     }
 
-
 }
 
 @media(max-width: 430px){
@@ -224,7 +224,6 @@ fleur_button button::after{
 
 
 
-
 /* ========= Eco Bazar ========== */
 
 .feature-products__container{
@@ -259,6 +258,15 @@ fleur_button button::after{
     overflow: hidden;
     
 }
+.section__one{
+    overflow-x: auto;
+  overflow-y: hidden;
+  padding: 25px 15px;
+}
+.section__one .card__item {
+    min-width: 250px;
+    scroll-snap-align: start center;
+}
 .card__image {
     width: 100%;
     object-fit: cover;
@@ -281,7 +289,6 @@ fleur_button button::after{
 .card__info p{
     font-size: 16px;
 }
-
 
 h3{
     color: #4D4D4D;
@@ -380,6 +387,7 @@ p{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 21px;
+    scroll-snap-type: x mandatory;
 }
 
 .section__wrapper{
@@ -403,9 +411,11 @@ p{
 
 .section__two{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:repeat(auto-fill, minmax(min(312px, 100%), 1fr));
     column-gap: 24px;
+    row-gap: 16px;
     font-family: "Poppins", sans-serif;
+    
 }
 
 .element{
@@ -476,7 +486,6 @@ p{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    /* position: relative; */
 }
 
 .element__info .card__cta{
@@ -486,12 +495,10 @@ p{
 }
 
 .card__cta--alt{
-    left:35%;
+    left:102px;
     top: 45%;
     gap: 12px;
     flex: 1 1 200px;
-    
-    
     
     
     > .cta__add-to-wish,
@@ -507,9 +514,6 @@ p{
         background: none;
     }
 
-   
-
-    
 }
 
 .card__cta--alt > .cta__quick-view:hover path,
@@ -533,6 +537,7 @@ p{
 
 .section_add {
     overflow: hidden;
+    max-width: 100%;
 }
 
 .add__section{
@@ -571,7 +576,7 @@ p{
     font-weight: 600;
     color: #00B207;
     line-height: 120%;
-    max-width: 250px;
+    max-width: 150px;
 }
 
 .add__info{
@@ -624,4 +629,46 @@ p{
 
 .section_add img{
     transition: all 0.3s;
+}
+
+.someExtra{
+    position: relative;
+}
+
+
+@media (max-width:1200px){
+    .section__two{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .section_add{
+        display: grid;
+        grid-template-rows: minmax(auto, 150px);
+        
+    }
+
+    .add__info h3{
+            font-size: 16px;
+            color: red;
+        }
+    .add__info p,
+    .add__info span{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:940px){
+    .section__two{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+}
+
+@media (max-width:500px){
+    .section__two{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
 }
