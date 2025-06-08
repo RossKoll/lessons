@@ -57,13 +57,12 @@ body {
 }
 
 .--margin_bottom {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .item__link {
     display: flex;
     overflow: hidden;
-    
 }
 
 .item__link img{
@@ -109,7 +108,6 @@ body {
 .fleur_block{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: repeat(3, auto); */
     column-gap: 30px;
     row-gap: 37px;
     font-size: 24px;
@@ -126,7 +124,7 @@ body {
     font-weight: 300;
 }
 
-fleur_button button::after{
+.fleur_button button::after{
     content: "";
     background-image: url("../img/right_arrow.svg");
 	background-position: right;
@@ -231,7 +229,7 @@ fleur_button button::after{
 }
 
 .feature-products__container{
-    max-width: 1320px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -258,11 +256,7 @@ fleur_button button::after{
     overflow: hidden;
     
 }
-.section__one{
-    overflow-x: auto;
-  overflow-y: hidden;
-  padding: 25px 15px;
-}
+
 .section__one .card__item {
     min-width: 250px;
     scroll-snap-align: start center;
@@ -386,8 +380,12 @@ p{
 .section__one{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 21px;
+    column-gap: 20px;
     scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: -10px -15px;
+    padding: 10px 15px 10px 15px;
 }
 
 .section__wrapper{
@@ -639,6 +637,7 @@ p{
 @media (max-width:1200px){
     .section__two{
         grid-template-columns: repeat(3, 1fr);
+        padding: 0 3px;
         
     }
     .section_add{
@@ -649,11 +648,15 @@ p{
 
     .add__info h3{
             font-size: 16px;
-            color: red;
+        
         }
     .add__info p,
     .add__info span{
         font-size: 16px;
+    }
+
+    .section__one{
+        padding: 0 15px;
     }
 
 }
@@ -663,10 +666,14 @@ p{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
+    .--margin_bottom{
+        margin-bottom: 25px;
+    }
     
 }
 
-@media (max-width:500px){
+@media (max-width:540px){
     .section__two{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
