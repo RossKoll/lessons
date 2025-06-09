@@ -500,10 +500,10 @@ p{
     
     
     > .cta__add-to-wish,
-    .cta__quick-view{
-        width: 40px;
-        border: 1px solid #F2F2F2;
-        border-radius: 50%;
+    .card__cta--alt .cta__quick-view{
+            width: 40px;
+            border: 1px solid #F2F2F2;
+            border-radius: 50%;
     }
 
     > .card__add-to-bag{
