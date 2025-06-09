@@ -38,7 +38,7 @@ body {
     padding-right: 15px;
 }
 
-.fleur_section {
+.fleur__section {
     flex : 0 0 33.333%;
     
 }
@@ -56,7 +56,7 @@ body {
     margin-bottom: 14px;;
 }
 
-.--margin_bottom {
+[class*="--margin_bottom"] {
   margin-bottom: 50px;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 
-.fleur_button button{
+.fleur__button button{
     color: #2C2C2C;
     background-color: #DBCCBA;
     padding: 9px 30px;
@@ -105,7 +105,7 @@ body {
     margin-bottom: 10px;
 }
 
-.fleur_block{
+.fleur__block{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
@@ -116,7 +116,7 @@ body {
 }
 
 
-.fleur_block h2{
+.fleur__block h2{
     font-size: 60px;
     grid-column: 1 / span 2;
     padding-top: 52px;
@@ -124,7 +124,7 @@ body {
     font-weight: 300;
 }
 
-.fleur_button button::after{
+.fleur__button button::after{
     content: "";
     background-image: url("../img/right_arrow.svg");
 	background-position: right;
@@ -148,29 +148,29 @@ body {
         padding: 0px 10px;
     }
 
-    .fleur_section{
+    .fleur__section{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         
     }
 
-    .--item-span{
+    .fleur__button--item-span{
         grid-column: span 2;
         display: flex;
         justify-content: center;
     }
 
-    .fleur_button button{
+    .fleur__button button{
         width: 80%;
 
     }
 
-    .--margin_bottom{
+    [class*="--margin_bottpm"]{
         margin-bottom: 0px;
     }
 
-    .fleur_block{
+    .fleur__block{
         row-gap: 30px;
     }
 
@@ -178,7 +178,7 @@ body {
         padding-top: 20px;
     }
 
-    .fleur_block h2{
+    .fleur__block h2{
         font-size: 52px;
         padding: 20px 0px;
     }
@@ -186,7 +186,7 @@ body {
 }
 
 @media(max-width: 430px){
-    .fleur_block{
+    .fleur__block{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -195,20 +195,20 @@ body {
         font-size: 20px;
     }
 
-    .fleur_block h2{
+    .fleur__block h2{
         grid-column: 1;
         font-size: 42px;
         padding: 20px 0px;
     }
 
-    .fleur_section{
+    .fleur__section{
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
         
     }
 
-    .--item-span{
+    .fleur__button--item-span{
         grid-column: span 1;
     }
 
@@ -309,7 +309,7 @@ p{
 
 .cta__add-to-wish,
 .cta__quick-view,
-.element__info .card_add-to-bag{
+.element__info .card__add-to-bag{
     position: relative;
     cursor: pointer;
     visibility: hidden;
@@ -335,7 +335,7 @@ p{
     opacity: 1;
 }
 
-.card_add-to-bag{
+.card__add-to-bag{
     position: absolute;
     display: flex;
     width: 40px;
@@ -351,7 +351,7 @@ p{
     
 }
 
-.card_add-to-bag img{
+.card__add-to-bag img{
     opacity: 1;
 }
 
@@ -362,11 +362,11 @@ p{
     
 }
 
-.card__item:hover .card_add-to-bag img{
+.card__item:hover .card__add-to-bag img{
     opacity: 0;
 }
 
-.card__item:hover .card_add-to-bag {
+.card__item:hover .card__add-to-bag {
     background-color: #00B207;
     background-image: url('../img/bag-white.svg');
     background-position: center;
@@ -393,7 +393,7 @@ p{
     row-gap: 20px;
 }
 
-.--section-grid{
+[class*="--section-grid"]{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -438,7 +438,7 @@ p{
     transform: scale(1.15);
 }
 
-.section_add:hover a>img,
+.section__add:hover a>img,
 .card__item:hover img,
 .element:hover a>img{
     transform: scale(1.1);
@@ -468,7 +468,7 @@ p{
 
 .element:hover .cta__add-to-wish,
 .element:hover .cta__quick-view,
-.element:hover .card_add-to-bag{
+.element:hover .card__add-to-bag{
 
     visibility: visible;
     opacity: 1;
@@ -506,7 +506,7 @@ p{
         border-radius: 50%;
     }
 
-    > .card_add-to-bag{
+    > .card__add-to-bag{
         bottom: 0px;
         right: 0px;
         background: none;
@@ -515,25 +515,25 @@ p{
 }
 
 .card__cta--alt > .cta__quick-view:hover path,
-.card__cta--alt > .card_add-to-bag:hover path,
+.card__cta--alt > .card__add-to-bag:hover path,
 .card__cta--alt > .cta__add-to-wish:hover path{
     stroke: #fff;
 }
 
 .card__cta--alt > .cta__quick-view:hover svg,
-.card__cta--alt > .card_add-to-bag:hover svg,
+.card__cta--alt > .card__add-to-bag:hover svg,
 .card__cta--alt > .cta__add-to-wish:hover svg
 {
     fill: #00B207;
 }
 
 .card__cta--alt > .cta__quick-view:hover,
-.card__cta--alt > .card_add-to-bag:hover,
+.card__cta--alt > .card__add-to-bag:hover,
 .card__cta--alt > .cta__add-to-wish:hover {
     background-color: #00B207;
 }
 
-.section_add {
+.section__add {
     overflow: hidden;
     max-width: 100%;
 }
@@ -612,7 +612,7 @@ p{
     
 }
 
-.section_add{
+.section__add{
     position: relative;
 }
 
@@ -625,7 +625,7 @@ p{
     color: #1A1A1A;
 }
 
-.section_add img{
+.section__add img{
     transition: all 0.3s;
 }
 
@@ -640,7 +640,7 @@ p{
         padding: 0 3px;
         
     }
-    .section_add{
+    .section__add{
         display: grid;
         grid-template-rows: minmax(auto, 150px);
         
@@ -667,7 +667,7 @@ p{
         grid-template-rows: auto;
     }
 
-    .--margin_bottom{
+    [class*="--margin_bottpm"]{
         margin-bottom: 25px;
     }
     
